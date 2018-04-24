@@ -1,0 +1,47 @@
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+C:\Users\asus0921>python
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)]
+ on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from flask import Flask, url_for
+>>> app = Flask(__name__)
+>>> @app.route('/')
+... def index(): pass
+...
+>>> @app.route('/login')
+... def login():pass
+...
+>>> @app.route('/user/<username>')
+... def profile(username): pass
+...
+>>> with app.test_request_context():
+... print url_for('index')
+  File "<stdin>", line 2
+    print url_for('index')
+        ^
+IndentationError: expected an indented block
+>>> with app.test_request_context():
+... print (url_for('index'))
+  File "<stdin>", line 2
+    print (url_for('index'))
+        ^
+IndentationError: expected an indented block
+>>> with app.test_request_context():
+... print(url_for('index'))
+  File "<stdin>", line 2
+    print(url_for('index'))
+        ^
+IndentationError: expected an indented block
+>>> with app.test_request_context():
+...     print(url_for('index'))
+...     print(url_for('login'))
+...     print(url_for('login', next='/'))
+...     print(url_for('profile', username='John Doe'))
+...
+/
+/login
+/login?next=%2F
+/user/John%20Doe
+>>>

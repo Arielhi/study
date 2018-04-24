@@ -1,0 +1,10 @@
+[
+  "test_pytest_emp.py::TestDemo::()::test_add[1-2-3]",
+  "test_pytest_emp.py::TestDemo::()::test_add[2-3-5]",
+  "test_pytest_emp.py::TestDemo::()::test_add[3-4-8]",
+  "test_pytest_emp.py::TestDemo::()::test_sub[1-2--1]",
+  "test_pytest_emp.py::TestDemo::()::test_sub[8-3-5]",
+  "test_pytest_emp.py::TestDemo::()::test_sub[3-4-8]",
+  "test_pytest_requests_emp.py::TestRequestDemo::()::test_get_posts",
+  "test_pytest_requests_emp.py::TestRequestDemo::()::test_delete_posts_by_id"
+]

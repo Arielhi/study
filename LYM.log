@@ -1,0 +1,5 @@
+Wed, 21 Mar 2018 10:32:54 LYMLogging.py[line:40] DEBUG It's a debug mag
+Wed, 21 Mar 2018 10:32:54 LYMLogging.py[line:43] INFO It's a info mag
+Wed, 21 Mar 2018 10:32:54 LYMLogging.py[line:46] WARNING It's a warning mag
+Wed, 21 Mar 2018 10:32:54 LYMLogging.py[line:48] ERROR It's a error mag
+Wed, 21 Mar 2018 10:32:54 LYMLogging.py[line:50] CRITICAL It's a unknown mag

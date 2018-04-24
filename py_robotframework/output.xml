@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.1 on win32)" generated="20180402 10:41:52.134">
+<suite id="s1" name="Search Baidu Demo" source="C:\Users\asus0921\PycharmProjects\untitled1\py_robotframework\search_baidu_demo.robot">
+<test id="s1-t1" name="启动浏览器">
+<kw name="Open Browsers">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${baidu}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20180402 10:41:52.314" level="INFO">Opening browser 'Chrome' to base url 'http://www.baidu.com'.</msg>
+<status status="PASS" starttime="20180402 10:41:52.314" endtime="20180402 10:41:56.822"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>百度一下，你就知道</arg>
+</arguments>
+<msg timestamp="20180402 10:41:56.827" level="INFO">Page title is '百度一下，你就知道'.</msg>
+<status status="PASS" starttime="20180402 10:41:56.822" endtime="20180402 10:41:56.827"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:41:52.314" endtime="20180402 10:41:56.827"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:41:52.312" endtime="20180402 10:41:56.828" critical="yes"></status>
+</test>
+<test id="s1-t2" name="搜索测试">
+<kw name="Input Search Word">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${search_input}</arg>
+<arg>${searchWord}</arg>
+</arguments>
+<msg timestamp="20180402 10:41:56.831" level="INFO">Typing text 'Python' into text field 'id=kw'.</msg>
+<status status="PASS" starttime="20180402 10:41:56.831" endtime="20180402 10:41:56.945"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180402 10:42:01.946" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20180402 10:41:56.945" endtime="20180402 10:42:01.946"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:41:56.831" endtime="20180402 10:42:01.947"></status>
+</kw>
+<kw name="Click Search Button">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>${search_btn}</arg>
+</arguments>
+<msg timestamp="20180402 10:42:01.950" level="INFO">Clicking button 'id=su'.</msg>
+<status status="PASS" starttime="20180402 10:42:01.949" endtime="20180402 10:42:02.058"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180402 10:42:07.059" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20180402 10:42:02.058" endtime="20180402 10:42:07.059"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:42:01.948" endtime="20180402 10:42:07.060"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:41:56.830" endtime="20180402 10:42:07.061" critical="yes"></status>
+</test>
+<test id="s1-t3" name="断言验证搜索结果：标题">
+<kw name="Assert Search Result">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Python_百度搜索</arg>
+</arguments>
+<msg timestamp="20180402 10:42:07.094" level="INFO">Page title is 'Python_百度搜索'.</msg>
+<status status="PASS" starttime="20180402 10:42:07.079" endtime="20180402 10:42:07.094"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:42:07.078" endtime="20180402 10:42:07.095"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:42:07.070" endtime="20180402 10:42:07.096" critical="yes"></status>
+</test>
+<test id="s1-t4" name="关闭浏览器">
+<kw name="Quit Search">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20180402 10:42:07.112" endtime="20180402 10:42:10.162"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:42:07.111" endtime="20180402 10:42:10.163"></status>
+</kw>
+<status status="PASS" starttime="20180402 10:42:07.105" endtime="20180402 10:42:10.171" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180402 10:41:52.137" endtime="20180402 10:42:10.181"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Search Baidu Demo">Search Baidu Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
